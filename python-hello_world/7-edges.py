@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-
-# Prints the first 3 letters the last 2 and the word Holberton
-
 word = "Holberton"
 word_first_3 = word[:3]
 word_last_2 = word[-2:]
