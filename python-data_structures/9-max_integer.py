@@ -2,12 +2,14 @@
 # 9-max_integer.py
 # Finds biggest integer
 def max_integer(my_list=[]):
-      if len(my_list) == 0:
-          return (None)
+      
+    if not my_list:
+        return None
 
-      big = my_list[0]
-      for i in range(len(my_list)):
-          if my_list[i] > big:
-              big = my_list[i]
+    max_integer = my_list[0]
 
-        return(big)
+    for i in range(1, len(my_list)):
+        if my_list[i] > max_integer:
+            max_integer = my_list[i]
+
+    return max_integer
