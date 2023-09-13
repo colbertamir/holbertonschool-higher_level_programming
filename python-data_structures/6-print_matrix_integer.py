@@ -7,6 +7,7 @@ def print_matrix_integer(matrix=[[]]):
         return
 
     for row in matrix:
+        new_row = []
         for col in row:
             print(f"{col:d}", end=" ")
         print()
