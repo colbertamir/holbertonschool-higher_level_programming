@@ -2,11 +2,11 @@
 # 10-divisible_by_2.py
 # Finds all multiples of 2
 def divisible_by_2(my_list=[]):
-     multiples = []
+     my_list = []
       for i in range(len(my_list)):
           if my_list[i] % 2 == 0:
-              multiples.append(True)
+              my_list.append(True)
             else:
-                multiples.append(False)
+                my_list.append(False)
 
-            return (multiples)
+            return (my_list)
