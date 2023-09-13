@@ -2,12 +2,7 @@
 # 6-print_matrix_integer.py
 # Prints a matrix
 def print_matrix_integer(matrix=[[]]):
-    
-    if not matrix:
-        return
-
-    for row in matrix:
-        new_row = []
-        for col in row:
-            print(f"{col:d}", end=" ")
-        print()
+     for row in matrix:
+         for col in row:
+             print("{:d}".format(col), end=" " if col != row[-1] else "")
+             print()
