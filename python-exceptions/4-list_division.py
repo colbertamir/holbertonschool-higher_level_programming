@@ -1,13 +1,8 @@
 #!/usr/bin/python3
 # 4-list_division.py
 # Divides element by element 2 lists
-def list_division(my_list_1, my_list_2, list_length):
-    Args:
-        my_list_1 (list): The first list.
-        my_list_2 (list): The second list.
-        list_length (int): The number of elements to divide.
-
-        Returns:
+def list_division(my_list_1, my_list_2, list_length):i
+            
             new_list = []
             for i in range(0, list_length):
                 try:
