@@ -6,7 +6,7 @@ def print_matrix_integer(matrix=[[]]):
     if not matrix:
         return
 
-    for i in range(len(matrix)):
-        for j in range(len(matrix[0])):
-            print(str.format("{0:d}", matrix[i][j]), end= " ")
+    for row in matrix:
+        for col in row:
+            print(str(col).format(), end=" ")
         print()
