@@ -5,3 +5,4 @@
 class Square:
 ''' Becomes square '''
     pass
+
