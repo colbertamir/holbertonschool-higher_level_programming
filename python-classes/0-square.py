@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-''' Square ''' 
+''' Defines square ''' 
 
 
 class Square:
-
+''' Becomes square '''
     pass
