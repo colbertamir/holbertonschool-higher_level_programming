@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Defines a Square """
 
+
 class Square:
     """ Instantiation Size and Raised exceptions """
 
