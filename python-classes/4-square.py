@@ -3,14 +3,14 @@
 
 
 class Square:
-    """ Instantiation Size and Raised exceptions """
+    """ Instantiation Size and Raised exceptions; Now getting and setting """
 
     def __init__(self, size=0):
+
         self.size = size
 
-        @property
         def size(self):
-            return self.__size
+            return (self.__size)
 
         def size(self, value):
             if not isinstance(size, int):
