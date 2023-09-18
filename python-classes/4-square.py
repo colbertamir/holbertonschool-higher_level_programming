@@ -6,14 +6,12 @@ class Square:
     """ Instantiation Size and Raised exceptions """
 
     def __init__(self, size=0):
-
         self.size = size
 
         def size(self):
             return self.__size
 
         def size(self, value):
-
             if not isinstance(size, int):
                 raise TypeError("size must be an integer")
             elif size < 0:
