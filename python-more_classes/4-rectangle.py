@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """ Represents a Rectangle with Height and Width attributes """
+    """ Represents a Rectangle with Height and Width traits & Recreates it """
 
     def __init__(self, width=0, height=0):
         self.height = height
