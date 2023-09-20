@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """ Represents a Rectangle with Height and Width to be deleted """
+    """ Represents a Rectangle with Height and Width and added public class """
 
     number_of_instances = 0
 
