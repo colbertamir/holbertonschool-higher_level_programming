@@ -1,11 +1,25 @@
 #!/usr/bin/python3
-# 3-safe_print_division.py
-# Divides 2 integers and prints the result
+
 def safe_print_division(a, b):
     try:
         div = a / b
-    except (TypeError, ZeroDivisionError):
+    except ZeroDivisionError:
         div = None
+    except Exception as e:
+        div = None
+        print("Exception:", e)
     finally:
-        print("Inside Result: {}".format(div))
-    return div
+        print("Inside result: {}".format(div))
+        return div
+
+
+if __name__ == "__main__":
+    a = 12
+    b = 2
+    result = safe_print_division(a, b)
+    print("{:d} / {:d} = {}".format(a, b, result))
+
+    a = 12
+    b = 0
+    result = safe_print_division(a, b)
+    print("{:d} / {:d} = {}".format(a, b, result))
