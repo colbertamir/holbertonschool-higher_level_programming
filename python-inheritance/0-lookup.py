@@ -13,10 +13,7 @@ def lookup(obj):
 
     attributes_and_methods = dir(obj)
 
-    filtered_attributes_and_methods \
-        = [i for i in attributes_and_methods if not i.startswith("_")]
-
-    return filtered_attributes_and_methods
+    return attributes_and_methods
 
 
 class MyClass1(object):
