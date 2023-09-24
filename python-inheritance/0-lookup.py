@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def lookup(obj):
     """
     Get a list of public attributes and methods of an object.
@@ -10,13 +11,25 @@ def lookup(obj):
         A list of public attributes/method names
     """
 
-    try:
-        attributes_and_methods = dir(obj)
+    attributes_and_methods = dir(obj)
 
-        filtered_attributes_and_methods =
-        [item for item in attributes_and_methods if not item.startswith("_")]
+    filtered_attributes_and_methods \
+        = [i for i in attributes_and_methods if not i.startswith("_")]
 
-        return filtered_attributes_and_methods
-    except TypeError:
+    return filtered_attributes_and_methods
 
-        return []
+
+class MyClass1(object):
+    pass
+
+
+class MyClass2(object):
+    my_attr1 = 3
+
+    def my_meth(self):
+        pass
+
+
+print(lookup(MyClass1))
+print(lookup(MyClass2))
+print(lookup(int))
