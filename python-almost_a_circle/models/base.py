@@ -12,9 +12,9 @@ class Base:
         Initializes the Base class.
 
         Args:
-            id (int, optional): An integer identifier. If provided, it is assigned to
-                the 'id' attribute. If not provided or 'None', a new
-                'id' is created by incrementing the class-level '__nb_objects' counter.
+        id (int, optional): An int identifier. If provided, it is assigned to
+        the 'id' attribute. If 'None', a new
+        'id' is created by incrementing '__nb_objects' counter.
 
         Returns:
             None

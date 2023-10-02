@@ -93,20 +93,22 @@ class Rectangle(Base):
         if self.width == 0 or self.height == 0:
             print("")
             return
-        
+
         for _ in range(self.y):
             print("")
-            
+
         for _ in range(self.height):
             print(" " * self.x + "#" * self.width)
-            
+
+
 def __str__(self):
     """Return a string version of the Rectangle."""
     return "[Rectangle] ({}) {}/{} - {}/{}".format(
         self.id, self.x, self.y, self.width, self.height)
 
+
 def update(self, *args):
-        """Update Rectangle with no-keyword arguments.
+    """Update Rectangle with no-keyword arguments.
 
         Args:
             *args (int): Arguments in the following order:
@@ -116,6 +118,7 @@ def update(self, *args):
                 4th arg: x attribute
                 5th arg: y attribute
         """
-        attributes = ["id", "width", "height", "x", "y"]
-        for i, arg in enumerate(args):
-            setattr(self, attributes[i], arg)
+
+    attributes = ["id", "width", "height", "x", "y"]
+    for i, arg in enumerate(args):
+        setattr(self, attributes[i], arg)
