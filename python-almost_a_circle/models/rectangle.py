@@ -107,18 +107,14 @@ def __str__(self):
         self.id, self.x, self.y, self.width, self.height)
 
 
-def update(self, *args):
-    """Update Rectangle with no-keyword arguments.
+def update(self, *args, **kwargs):
+    """Update Rectangle with keyword arguments.
 
         Args:
-            *args (int): Arguments in the following order:
-                1st arg: id attribute
-                2nd arg: width attribute
-                3rd arg: height attribute
-                4th arg: x attribute
-                5th arg: y attribute
-        """
-
+            *args: Not used
+            **kwargs (dict): Key-value pairs of attributes.
+    """
     attributes = ["id", "width", "height", "x", "y"]
-    for i, arg in enumerate(args):
-        setattr(self, attributes[i], arg)
+    for key, value in kwargs.items():
+        if key in attributes:
+            setattr(self, key, value)
