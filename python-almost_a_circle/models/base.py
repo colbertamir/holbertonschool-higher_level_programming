@@ -34,6 +34,6 @@ class Base:
             list_dictionaries (list): A list of dictionaries.
 
         Returns:
-            str: JSON representation of list_dictionaries.
+            str: JSON version of list_dictionaries.
         """
-        return json.dumps(list_dictionaries) if list_dictionaries else "[]"
+        return json.dump(list_dictionaries) if list_dictionaries else "[]"
